@@ -4,3 +4,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php wp_head(); ?>
 </head>
+
+<header class="banner">
+
+</header>
+
+<div class="contentWrp">

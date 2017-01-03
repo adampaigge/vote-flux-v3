@@ -1,0 +1,62 @@
+
+//Standard Positions
+@mixin posRelative {
+	position: relative; display: inline-block; float: left;
+	width:100%; height: auto;
+}
+
+@mixin posMiddle {
+	display: block !important;
+	margin: 0 auto !important;
+}
+
+@mixin posFixed {
+	position: fixed;
+	margin: 0; padding: 0;
+}
+
+@mixin posAbsolute {
+	position: absolute;
+	margin: 0; padding: 0;
+}
+
+@mixin posCover {
+	top:0; right:0; bottom: 0; left: 0;
+	width: auto; height: auto;
+}
+
+
+
+//Flex Containewrs
+@mixin flxVH {
+	display: -webkit-flex; display: flex;
+	-webkit-flex-direction: column; flex-direction: column;
+	-webkit-align-items: center; align-items: center;
+	-webkit-justify-content: center; justify-content: center;
+}
+
+@mixin flxH {
+	display: -webkit-flex; display: flex;
+	-webkit-flex-direction: row; flex-direction: row;
+	-webkit-align-items: center; align-items: center;
+	-webkit-justify-content: center; justify-content: center;
+}
+
+@mixin flxV {
+  display: -webkit-flex; display: flex;
+  -webkit-flex-direction: column; flex-direction: column;
+  -webkit-align-items: center; align-items: center;
+  -webkit-justify-content: center; justify-content: center;
+}
+
+
+//Breakpoints
+$canvas-bp-lrg: 1080px;
+$canvas-bp-med: 800px;
+$canvas-bp-sml: 414px;
+
+
+//Options
+.blend-multiply {
+	mix-blend-mode: exclusion;
+}

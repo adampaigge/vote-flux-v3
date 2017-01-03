@@ -1,0 +1,99 @@
+/*font-family:'Helvetica Neue LT W01_25 UltLt';
+font-family:'Helvetica Neue LT W01_35 Thin';
+font-family:'Helvetica Neue LT W01_55 Roman';
+font-family:'Helvetica Neue LT W01_71488914';
+font-family:'Helvetica Neue LT W01_95 Black';
+*/
+
+$font-UltLt: 'Helvetica Neue LT W01_25 UltLt', sans-serif;
+$font-Thin: 'Helvetica Neue LT W01_35 Thin', sans-serif;
+$font-Roman: 'Helvetica Neue LT W01_55 Roman', sans-serif;
+$font-Bold: 'Helvetica Neue LT W01_71488914', sans-serif;
+$font-Black: 'Helvetica Neue LT W01_95 Black', sans-serif;
+
+body {
+    font-family: $font-Roman;
+    font-size: 14px; line-height: 20px;
+    color: #FFF;
+}
+
+p {
+    @include posRelative;
+    margin: 0 0 20px 0; padding: 0;
+    font-family: $font-Thin;
+    font-size: 18px; line-height: 20px;
+    letter-spacing: 1px;
+    color: $col-grey;
+    text-align: center;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    @include posRelative;
+    margin: 0 0 20px 0; padding: 0;
+    color: #FFF;
+}
+
+h1 {
+    font-family: $font-UltLt;
+    font-size: 40px; line-height: 40px;
+    text-align: center;
+}
+
+@media only screen
+and (max-width: $canvas-bp-lrg) {
+
+}
+
+@media only screen
+and (max-width: $canvas-bp-med) {
+
+}
+
+@media only screen
+and (max-width: $canvas-bp-sml) {
+    h1 {
+        font-size: 28px; line-height: 30px;
+    }
+}
+
+
+
+//Buttons
+.btn-hex {
+    @include posRelative;
+    margin: 0; padding: 0 20px;
+
+    width: auto; height: 40px;
+
+    background-color: rgba($col-dark, 0.75);
+
+    font-family: $font-Bold; font-size: 20px; line-height: 37px; letter-spacing: 1px;
+    text-align: center; text-transform: uppercase;
+}
+
+.site-nav-inr .menu-item:before, .btn-hex:before {
+    @include posAbsolute;
+    top: 0; right: -13px;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-left: 13px solid;
+    border-top: 20px solid transparent !important;
+    border-bottom: 20px solid transparent !important;
+}
+
+.site-nav-inr .menu-item:after, .btn-hex:after {
+    @include posAbsolute;
+    top: 0; left: -13px;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-right: 13px solid;
+    border-top: 20px solid transparent !important;
+    border-bottom: 20px solid transparent !important;
+}

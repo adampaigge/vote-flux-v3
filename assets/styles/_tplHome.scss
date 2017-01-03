@@ -1,0 +1,10 @@
+
+.homepageWrp {
+  @include posRelative();
+  min-height:100vh;
+
+  background-image: url('../../assets/images/bgHomePage.jpg');
+  background-position: top right;
+  background-size: cover;
+  border: 1px red solid;
+}
