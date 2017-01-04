@@ -23,7 +23,7 @@ p {
     font-family: $font-Thin;
     font-size: 18px; line-height: 20px;
     letter-spacing: 1px;
-    color: $col-grey;
+    color: $colGrey;
     text-align: center;
 }
 
@@ -70,7 +70,7 @@ and (max-width: $canvas-bp-sml) {
 
     width: auto; height: 40px;
 
-    background-color: rgba($col-dark, 0.75);
+    background-color: rgba($colDark, 0.75);
 
     font-family: $font-Bold; font-size: 20px; line-height: 37px; letter-spacing: 1px;
     text-align: center; text-transform: uppercase;

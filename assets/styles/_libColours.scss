@@ -1,9 +1,9 @@
-$col-dark: #21212B;
-$col-orng: #FF4500;
-$col-purp: #6553A1;
-$col-grey: #9B9BB0;
+$colDark: #21212B;
+$colOrng: #FF4500;
+$colPurp: #6553A1;
+$colGrey: #9B9BB0;
 
-$col-grp: (('dark', $col-dark), ('orng', $col-orng), ('purp', $col-purp), ('grey', $col-grey));
+$col-grp: (('dark', $colDark), ('orng', $colOrng), ('purp', $colPurp), ('grey', $colGrey));
 
 @each $colLbl, $colVal in $col-grp {
 	//Background Colours Classes
