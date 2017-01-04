@@ -9,6 +9,7 @@
 	float: none !important;
 	display: block !important;
 	margin: 0 auto !important;
+	max-width: 1100px;
 }
 
 @mixin posFixed {
@@ -25,7 +26,6 @@
 	top:0; right:0; bottom: 0; left: 0;
 	width: auto; height: auto;
 }
-
 
 
 //Flex Containewrs

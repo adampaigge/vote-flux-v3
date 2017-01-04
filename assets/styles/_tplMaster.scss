@@ -5,7 +5,92 @@ body {
 	font-size: 0;
 }
 
-.contentWrp {
-  @include posRelative(); @include posMiddle();
-  max-width:1100px; min-height:100vh;
+
+.embed-container { position: relative; display: inline-block; float: left; width:100%; padding-bottom: 56.25%; margin-bottom: 32px; height: 0; overflow: hidden; max-width: 100%; }
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+
+hr {
+	@include posRelative(); opacity: 0.25;
+	border-top:1px solid #FFF;
+	margin-bottom: 16px;
+	height:0;
 }
+
+.contentCol {
+	@include posRelative();
+}
+
+	.contentColLeft {
+		width:calc((12.5% - 1px) * 6);
+	}
+
+	.contentColRight {
+		float: right;
+		width:calc((12.5% - 8px) * 2);
+	}
+
+
+
+.siteNavWrp {
+	@include posFixed();
+
+	top:16px; right: 0; left:0;
+	height:32px;
+}
+
+	.siteNavInr {
+		@include posRelative(); @include posMiddle();
+		height:32px;
+	}
+
+
+	.navLogo {
+		@include posRelative();
+		width:95px; height: 32px;
+		background-image: url('../../dist/images/logoFull.svg');
+		background-size: 100%;
+	}
+	
+	.navItems {
+		@include posRelative;
+		float: right;
+		width:auto;
+		
+	}
+		.menu-item {
+			@include posRelative;
+			margin: 8px 0 0 16px; padding: 0 20px;
+	
+			width: auto; height: 16px;
+			left:9px;
+	
+			background-color: rgba($colDark, 0.75);
+	
+			font-family: $fontBold; font-size: 12px; line-height: 16px; letter-spacing: 0px;
+			text-align: center;
+			background-color: $colDark;
+		}
+	
+			.menu-item:before {
+				@include posAbsolute;
+				top: 0; right: -5px;
+				content: ' ';
+				width: 0;
+				height: 0;
+				border-left:5px solid $colDark;
+				border-top: 8px solid transparent !important;
+				border-bottom: 8px solid transparent !important;
+			}
+	
+			.menu-item:after{
+				@include posAbsolute;
+				top: 0; left: -5px;
+				content: ' ';
+				width: 0;
+				height: 0;
+				border-right:5px solid $colDark;
+				border-top: 8px solid transparent !important;
+				border-bottom: 8px solid transparent !important;
+			}

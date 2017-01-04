@@ -17,6 +17,7 @@ $grdGtr: 16px;
 
 div.gridWrp {
 	@include posAbsolute(); @include posCover(); opacity: 0.25;
+	display: none;
 	z-index: 0;
 }
 
@@ -35,7 +36,7 @@ div.gridWrp {
 	.grid-col {
 		@include posAbsolute(); @include posCover();
 		@include posRelative; float: left;
-		width:calc((100% / 8) - (#{$grdGtr} - 2)); height: 100%;
+		width:calc((100% / 8) - (#{$grdGtr} - 2)); height: 500%;
 
 		border-right:1px solid lightgreen;
 		border-left:1px solid lightgreen;

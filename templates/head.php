@@ -11,5 +11,3 @@
 </header>
 
 <?php get_template_part('templates/site-grid', 'page'); ?>
-
-<div class="contentWrp">

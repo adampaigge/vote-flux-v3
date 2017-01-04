@@ -89,6 +89,16 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/assets\/images\/logoFull.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/logoFull.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/manifest.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -3802,6 +3812,24 @@
 		"oA": 2,
 		"oAP": "\/composer.lock",
 		"oF": 0
+		},
+	"\/dist\/images\/bgHomePage.jpg": {
+		"ft": 16384,
+		"iS": 287101,
+		"oA": 0,
+		"oAP": "\/dist\/images\/bgHomePage.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/dist\/images\/logoFull.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/images\/logoFull.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/dist\/scripts\/customizer.js": {
 		"ft": 64,

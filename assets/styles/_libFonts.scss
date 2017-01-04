@@ -20,8 +20,8 @@ body {
 p {
     @include posRelative;
     margin: 0 0 16px 0; padding: 0;
-    font-family: $fontThin;
-    font-size: 14px; line-height: 16px;
+    font-family: $fontRoman;
+    font-size: 18px; line-height: 24px;
     letter-spacing: 1px;
     color: #FFF;
     text-align: left;
@@ -30,6 +30,11 @@ p {
 a {
     color: #FFF;
     text-decoration: none;
+}
+
+strong {
+	font-family: $fontBold;
+	font-weight:normal;
 }
 
 
@@ -48,8 +53,8 @@ h1 {
 }
 
 h2 {
-	font-family: $fontThin;
-	font-size: 80px; line-height: 80px;
+	font-family: $fontBold;
+	font-size: 49px; line-height: 49px;
 	letter-spacing: 1px;
 
 }
@@ -101,24 +106,28 @@ and (max-width: $canvas-bp-sml) {
     text-align: center;
 }
 
-.btnHex:before {
-    @include posAbsolute;
-    top: 0; right: -9px;
-    content: ' ';
-    width: 0;
-    height: 0;
-    border-left:9px solid;
-    border-top: 16px solid transparent !important;
-    border-bottom: 16px solid transparent !important;
-}
+	.btnHex:before {
+	    @include posAbsolute;
+	    top: 0; right: -9px;
+	    content: ' ';
+	    width: 0;
+	    height: 0;
+	    border-left:9px solid;
+	    border-top: 16px solid transparent !important;
+	    border-bottom: 16px solid transparent !important;
+	}
 
-.btnHex:after {
-    @include posAbsolute;
-    top: 0; left: -9px;
-    content: ' ';
-    width: 0;
-    height: 0;
-    border-right:9px solid;
-    border-top: 16px solid transparent !important;
-    border-bottom: 16px solid transparent !important;
-}
+	.btnHex:after {
+	    @include posAbsolute;
+	    top: 0; left: -9px;
+	    content: ' ';
+	    width: 0;
+	    height: 0;
+	    border-right:9px solid;
+	    border-top: 16px solid transparent !important;
+	    border-bottom: 16px solid transparent !important;
+	}
+
+	.btnHexFull {
+		width: calc(100% - 18px);
+	}
