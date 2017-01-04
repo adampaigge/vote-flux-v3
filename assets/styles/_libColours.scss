@@ -3,13 +3,13 @@ $colOrng: #FF4500;
 $colPurp: #6553A1;
 $colGrey: #9B9BB0;
 
-$col-grp: (('dark', $colDark), ('orng', $colOrng), ('purp', $colPurp), ('grey', $colGrey));
+$col-grp: (('Dark', $colDark), ('Orng', $colOrng), ('Purp', $colPurp), ('Grey', $colGrey));
 
 @each $colLbl, $colVal in $col-grp {
 	//Background Colours Classes
-	.bgc-#{$colLbl} { background-color: #{$colVal} !important; }
+	.bgc#{$colLbl} { background-color: #{$colVal} !important; }
     //Border Colours Classes
-	.brd-#{$colLbl}, .brd-#{$colLbl}:before, .brd-#{$colLbl}:after { border-color: #{$colVal} !important; }
+	.brd#{$colLbl}, .brd#{$colLbl}:before, .brd#{$colLbl}:after { border-color: #{$colVal} !important; }
     //Text Colours Classes
-	.txt-#{$colLbl}, a.txt-#{$colLbl}, .txt-#{$colLbl} p { color: #{$colVal} !important; }
+	.txt#{$colLbl}, a.txt-#{$colLbl}, .txt-#{$colLbl} p { color: #{$colVal} !important; }
 }

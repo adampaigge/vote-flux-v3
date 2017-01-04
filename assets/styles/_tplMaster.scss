@@ -1,8 +1,11 @@
 html {
 	background-color: $colDark;
 }
+body {
+	font-size: 0;
+}
 
 .contentWrp {
-  @include posRelative();
-  min-height:100vh;
+  @include posRelative(); @include posMiddle();
+  max-width:1100px; min-height:100vh;
 }

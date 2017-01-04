@@ -4,10 +4,8 @@ $grdRow: 16px;
 $grdCol: 12.5%;
 $grdGtr: 16px;
 
-@function grd-rows($rows, $size) {
-	@if unquote("#{$size} == L") {
-		@return $grd-row * $rows;
-	}
+@function grd-rows($rows) {
+	@return $grdRow * $rows;
 }
 
 //6 Column Grid
@@ -19,7 +17,7 @@ $grdGtr: 16px;
 
 div.gridWrp {
 	@include posAbsolute(); @include posCover(); opacity: 0.25;
-	z-index: 1000;
+	z-index: 0;
 }
 
 	.grid-inner {

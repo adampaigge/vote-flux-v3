@@ -1,9 +1,25 @@
 
-.homepageWrp {
-  @include posRelative();
+.homepageBg {
+  @include posFixed(); @include posCover(); z-index: -1;
   min-height:100vh;
 
-  background-image: url('../../assets/images/bgHomePage.jpg');
+  background-image: url('../../dist/images/bgHomePage.jpg');
   background-position: top right;
   background-size: cover;
 }
+
+.homepageContent {
+	@include posRelative();
+	padding-top: grd-rows(10);
+	padding-right: calc(((100% / 8) + (#{$grdGtr} - 2)) * 2);
+
+}
+
+
+	.logoHomepage {
+		@include posRelative();
+		margin-bottom: grd-rows(2);
+		width:190px; height: 64px;
+		background-image: url('../../dist/images/logoFull.svg');
+		background-size: 100%;
+	}
