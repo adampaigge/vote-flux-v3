@@ -1,7 +1,22 @@
+<footer class="footerWrp">
+  <div class="footerInr">
+	  <div class="contentCol contentColHalf">
+		  <h5 class="mrgOff txtGrey">More Information</h5>
+		  <?php get_template_part('templates/navFooter', 'page'); ?>
+	  </div>
+	  <div class="contentCol contentColHalf">
+		  <h5 class="mrgOff txtGrey">Quick Links</h5>
+		  <?php get_template_part('templates/navQuick', 'page'); ?>
 
+	  </div>
 
-<footer class="content-info">
-  <div class="container">
-    <?php dynamic_sidebar('sidebar-footer'); ?>
+	  <!--<?php dynamic_sidebar('sidebar-footer'); ?>-->
   </div>
+
+	<div class="footerInr">
+		<div class="footerLogo"></div>
+		<h4 class="mrgOff">Join the movement</h4>
+		<h5 class="mrgOff txtGrey">Modernise our democratic system</h5>
+		<p class="txtGrey">Authorised by Max Kaye, L6 50 Carrington St, Sydney, 2000</p>
+	</div>
 </footer>

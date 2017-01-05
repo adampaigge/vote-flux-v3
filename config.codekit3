@@ -4063,6 +4063,12 @@
 		"oAP": "\/template-custom.php",
 		"oF": 0
 		},
+	"\/template-generic.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-generic.php",
+		"oF": 0
+		},
 	"\/template-home.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -4133,6 +4139,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/templates\/site-grid.php",
+		"oF": 0
+		},
+	"\/templates\/site-nav.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/site-nav.php",
 		"oF": 0
 		},
 	"\/vendor\/autoload.php": {

@@ -32,13 +32,18 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+	color: $colOrng;
+	text-decoration: none;
+}
+
 strong {
 	font-family: $fontBold;
 	font-weight:normal;
 }
 
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     @include posRelative;
     margin: 0 0 16px 0; padding: 0;
     color: #FFF;
@@ -53,22 +58,29 @@ h1 {
 }
 
 h2 {
-	font-family: $fontBold;
+	font-family: $fontBlack;
 	font-size: 49px; line-height: 49px;
 	letter-spacing: 1px;
 
 }
 
 h3 {
-	font-family: $fontThin;
+	font-family: $fontBlack;
 	font-size: 32px; line-height: 32px;
 	letter-spacing: 1px;
 
 }
 
 h4 {
-	font-family: $fontThin;
+	font-family: $fontBlack;
 	font-size: 28px; line-height: 32px;
+	letter-spacing: 1px;
+
+}
+
+h5 {
+	font-family: $fontBlack;
+	font-size: 24px; line-height: 24px;
 	letter-spacing: 1px;
 
 }
@@ -129,5 +141,6 @@ and (max-width: $canvas-bp-sml) {
 	}
 
 	.btnHexFull {
+		margin: 0 0 16px 0;
 		width: calc(100% - 18px);
 	}

@@ -73,5 +73,12 @@
 
   // Load Events
   $(document).ready(UTIL.loadEvents);
+  $(document).ready(function() {
+	  //GRID CONTROLLER
+	  $('.gridWrp').hide();
+	  $(document).keyup(function(e) {
+		  if (e.keyCode === 87) { $('.gridWrp').fadeToggle(); }
+	  });
+  })
 
 })(jQuery); // Fully reference jQuery after this point.

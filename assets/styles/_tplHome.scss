@@ -1,49 +1,22 @@
 
-.contentBgi {
-  @include posFixed(); @include posCover(); z-index: -1;
-  min-height:100vh;
 
-  background-image: url('../../dist/images/bgHomePage.jpg');
-  background-position: top right;
-  background-size: cover;
-}
 
-.contentWrp {
-	@include posRelative();
+.landingP1 {
+	@include flxV();
 
-	width:100vw; height:100vh;
 }
 
 	.landingP1 .contentInr {
-		padding-top: grd-rows(10);
 		padding-right: calc(((100% / 8) + (#{$grdGtr} - 2)) * 1);
 	}
 
 	.landingP2 {
-		background: rgba(#21212B, 0.7);
+		padding-top: 128px;
+		background: rgba(#000000, 0.5);
 	}
 
 
-	.contentInr {
-		@include posRelative(); @include posMiddle();
-		padding:grd-rows(2) 0;
-	}
 
-	.contentInrTemp {
-		padding: 128px 0;
-	}
-
-		.contentSectHeader {
-			@include posRelative();
-			margin-bottom: grd-rows(1);
-
-			height: 32px;
-
-			font-family: $fontBold;
-			font-size: 18px; line-height: 32px;
-			letter-spacing: 1px;
-			color:$colGrey;
-		}
 
 	.landingLogo {
 		@include posRelative();

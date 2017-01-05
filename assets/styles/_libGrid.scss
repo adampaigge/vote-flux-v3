@@ -16,9 +16,8 @@ $grdGtr: 16px;
 
 
 div.gridWrp {
-	@include posAbsolute(); @include posCover(); opacity: 0.25;
-	display: none;
-	z-index: 0;
+	@include posAbsolute(); @include posCover(); opacity: 0.25; display: none;
+	z-index: 10;
 }
 
 	.grid-inner {
