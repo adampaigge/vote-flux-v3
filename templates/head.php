@@ -12,3 +12,4 @@
 </header>
 
 <?php get_template_part('templates/site-grid', 'page'); ?>
+<?php get_template_part('templates/site-nav', 'page'); ?>

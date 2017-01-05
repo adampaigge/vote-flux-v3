@@ -3,14 +3,16 @@
  * Template Name: Generic Page
  */
 ?>
-<?php get_template_part('templates/site-nav', 'page'); ?>
 
 <?php while (have_posts()) : the_post(); ?>
-
 	<div class="contentBgi"></div>
-	<div class="contentWrp">
-		<div  class="contentInr contentInrTemp">
-			<?php get_template_part('templates/content', 'page'); ?>
+	<article class="contentWrp contentWrapPush">
+		<div  class="contentInr">
+			<h2><?php the_title(); ?></h2>
+			<div class='contentSectHeader contentSectBorder'></div>
+			<div class="contentCol contentColLeft">
+				<?php the_content(); ?>
+			</div>
 		</div>
-	</div>
+	</article>
 <?php endwhile; ?>

@@ -11,8 +11,6 @@ html, body {
 	@include posRelative(); z-index:10 !important;
 	margin: 0 !important; padding:0 !important;
 	width: 100vw !important;
-	background-color: pink;
-
 }
 
 	.row {
@@ -62,6 +60,7 @@ hr {
 
 .contentInr {
 	@include posRelative(); @include posMiddle();
+	min-height: 50vh;
 }
 
 .contentInrTemp {
@@ -70,15 +69,22 @@ hr {
 
 .contentSectHeader {
 	@include posRelative();
-	margin-bottom: grd-rows(1);
+	margin-bottom: grd-rows(1); padding-top: grd-rows(1);
 
-	height: 32px;
+	height: grd-rows(3);
 
 	font-family: $fontBold;
-	font-size: 18px; line-height: 32px;
+	font-size: 18px; line-height: 16px;
 	letter-spacing: 1px;
 	color:$colGrey;
+
+	border-top: 1px solid rgba(255,255,255,0.25);
 }
+
+	.contentSectBorder {
+		padding: 0;
+		height: grd-rows(1);
+	}
 
 .contentCol {
 	@include posRelative();
@@ -106,9 +112,7 @@ hr {
 .contentBreak {
 	@include posRelative();
 	height: grd-rows(5);
-
 }
-
 
 
 .siteNavWrp {

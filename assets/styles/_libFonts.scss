@@ -73,14 +73,14 @@ h3 {
 
 h4 {
 	font-family: $fontBlack;
-	font-size: 24px; line-height: 24px;
+	font-size: 20px; line-height: 24px;
 	letter-spacing: 1px;
 
 }
 
 h5 {
 	font-family: $fontBlack;
-	font-size: 20px; line-height: 24px;
+	font-size: 18px; line-height: 24px;
 	letter-spacing: 1px;
 
 }
@@ -102,6 +102,44 @@ and (max-width: $canvas-bp-sml) {
     }
 }
 
+//Lists
+ul, ol {
+	@include posRelative;
+	margin: 0 0 16px 0; padding: 0;
+	font-family: $fontRoman;
+	font-size: 18px; line-height: 24px;
+	letter-spacing: 1px;
+	color: #FFF;
+	text-align: left;
+
+}
+
+//Image Handlers
+.alignleft {
+	margin-right: 16px;
+}
+
+.alignright {
+	margin-left: 16px;
+}
+
+//Quotes and Specials
+cite {
+	@include posRelative;
+	padding-left: 32px;
+	margin-bottom: 32px;
+}
+
+cite:before {
+	@include posRelative;
+	margin-right: 16px;
+	width: auto;
+	height:100%;
+	font-family: 'FontAwesome';
+	font-size: 32px;
+	content: '\f10d';
+
+}
 
 
 //Buttons

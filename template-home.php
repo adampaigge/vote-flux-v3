@@ -6,7 +6,6 @@
 
 <?php while (have_posts()) : the_post(); ?>
 	<div class="scrollWrp">
-		<?php get_template_part('templates/site-nav', 'page'); ?>
 		<div class="contentBgi"></div>
 		<div class="contentWrp snapCord landingP1">
 			<div class="contentInr">
@@ -18,18 +17,20 @@
 			</div>
 		</div>
 
-		<div class="contentWrp landingP2">
+		<div class="contentWrp contentWrapPush">
 			<div  class="contentInr">
 				<div class='contentSectHeader'>What is Flux?</div>
+
 				<div class='embed-container'>
 					<iframe src='https://www.youtube.com/embed/i7MCxADcrwE' frameborder='0' allowfullscreen></iframe>
 				</div>
+
 				<h2>Flux in a Nutshell.</h2>
 				<div class="contentCol contentColLeft">
 					<p>This is us in a nutshell. We’re fed up with the political process too! Flux is your answer for a real democratic voice in parliament.</p>
 					<p><strong>Help us get the word out! #share</strong></p>
-
 				</div>
+
 				<div class="contentCol contentColRight">
 					<div class="btnHex btnHexFull bgcOrng brdOrng"><a>Join Now</a></div>
 					<div class="btnHex btnHexFull bgcDark brdDark"><a>Learn More</a></div>
@@ -37,15 +38,13 @@
 
 				<div class="contentBreak"></div>
 
+			</div>
+			<div class="contentInr">
 				<div class='contentSectHeader'>Recent Posts.</div>
-				<div class="postCategories">
-
-				</div>
+				<div class="postCategories"></div>
 				<div class="contentPosts">
-
 					<?php
 						$args = array( 'posts_per_page' => 7 );
-
 						$query = new WP_Query($args);
 						if ( $query->have_posts() ):
 							while ( $query->have_posts() ): $query->the_post();
@@ -76,11 +75,14 @@
 						echo '</a>';
 					?>
 				</div>
-
-
-
 			</div>
+<!--			<div class="contentInr">-->
+<!--				<div class='contentSectHeader'>Become a Member.</div>-->
+<!--				<h2>We're fed up with the political process too</h2>-->
+<!--				<p>Feel unrepresented? Fed up with broken promises? Vote to change the system. Flux is a new system, not about ideology, but of progress for process. Elect Flux and make your voice heard. Help us contest the 2016 federal election and change ‪#‎AusPol‬ forever.</p>-->
+<!--			</div>-->
 		</div>
+	</div>
 <!--		<div class="contentWrp"></div>-->
 	</div>
 
