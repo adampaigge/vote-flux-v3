@@ -99,6 +99,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/logoIcon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/logoIcon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/manifest.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -225,6 +235,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/styles\/_tplMaster.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/styles\/_tplPosts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/_tplPosts.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -3831,6 +3854,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/dist\/images\/logoIcon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/images\/logoIcon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/dist\/scripts\/customizer.js": {
 		"ft": 64,
 		"mi": 1,
@@ -4121,6 +4154,18 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/templates\/head.php",
+		"oF": 0
+		},
+	"\/templates\/navFooter.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/navFooter.php",
+		"oF": 0
+		},
+	"\/templates\/navQuick.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/navQuick.php",
 		"oF": 0
 		},
 	"\/templates\/page-header.php": {

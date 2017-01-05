@@ -1,14 +1,23 @@
-html {
+html, body {
+	@include posRelative();
 	background-color: $colDark;
-}
-body {
+
+	width: 100vw;
+
 	font-size: 0;
 }
 
 .container {
-	@include posRelative();
-	z-index:10 !important;
+	@include posRelative(); z-index:10 !important;
+	margin: 0 !important; padding:0 !important;
+	width: 100vw !important;
+	background-color: pink;
+
 }
+
+	.row {
+		margin:0 !important;
+	}
 
 
 .embed-container { position: relative; display: inline-block; float: left; width:100%; padding-bottom: 56.25%; margin-bottom: 32px; height: 0; overflow: hidden; max-width: 100%; }
@@ -37,8 +46,8 @@ hr {
 
 .contentWrp {
 	@include posRelative();
-
-	width:100vw; min-height:100vh;
+	padding:0 32px;
+	 min-height:100vh;
 }
 
 .contentBgi {
@@ -89,6 +98,11 @@ hr {
 		width:calc(50% - 20px);
 	}
 
+	.contentColQuart {
+		margin-right: 18px;
+		width:calc(25% - 13px);
+	}
+
 .contentBreak {
 	@include posRelative();
 	height: grd-rows(5);
@@ -100,10 +114,8 @@ hr {
 .siteNavWrp {
 	@include posFixed();
 	z-index: 20;
-	padding: 16px 0;
-	top: 0;
-	right: 0;
-	left: 0;
+	padding: 16px 32px;
+	top: 0;  right: 0;  left: 0;
 	height: 64px;
 	background: rgba(#000000, 0.5);
 }
@@ -123,13 +135,14 @@ hr {
 	
 	.navItems {
 		@include posRelative;
+		margin-right: 9px;
 		float: right;
 		width:auto;
 		
 	}
 		.hexNavItems .menu-item {
 			@include posRelative;
-			margin: 8px 0 0 16px; padding: 0 20px;
+			margin: 8px 4px 0 16px; padding: 0 20px;
 	
 			width: auto; height: 16px;
 			left:9px;
@@ -175,45 +188,55 @@ hr {
 
 .footerWrp {
 	@include posRelative(); z-index:10;
-	padding: 32px 0;
 	height: auto;
-	background-color: rgba($colDark, 0.75);
 }
 
-	.footerInr {
-		@include posRelative(); @include posMiddle();
-		margin: 16px auto !important;
+	.footerBlk {
+		@include posRelative(); z-index:10;
+		padding: 32px;
 		height: auto;
+		background-color: rgba($colDark, 0.75);
 	}
 
-		.footerLogo {
-			@include posAbsolute();
-			width:27px; height:32px;
-			right:0;
-			background-image: url('../../dist/images/logoIcon.svg');
-			background-size: 100%;
-			background-repeat: no-repeat;
-			background-position: center;
+	.footerBlkAuth {
+		background-color: rgba($colDark, 0.5);
 
+	}
+
+		.footerInr {
+			@include posRelative(); @include posMiddle();
+			margin: 16px auto !important;
+			height: auto;
 		}
 
-		.footernNavItems {
+			.footerLogo {
+				@include posAbsolute();
+				width:41px; height:48px;
+				right:0;
+				background-image: url('../../dist/images/logoIcon.svg');
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
 
-			@include posRelative;
-			margin: 0 0 32px 0 !important; padding: 0;
-			font-family: $fontRoman;
-			font-size: 18px; line-height: 24px;
-			letter-spacing: 1px;
-			color: #FFF;
-			text-align: left;
-		}
+			}
 
 			.footernNavItems {
+
 				@include posRelative;
-				margin: 0 0 8px 0; padding: 0;
+				margin: 0 0 32px 0 !important; padding: 0;
 				font-family: $fontRoman;
 				font-size: 18px; line-height: 24px;
 				letter-spacing: 1px;
 				color: #FFF;
 				text-align: left;
 			}
+
+				.footernNavItems {
+					@include posRelative;
+					margin: 0 0 8px 0; padding: 0;
+					font-family: $fontRoman;
+					font-size: 18px; line-height: 24px;
+					letter-spacing: 1px;
+					color: #FFF;
+					text-align: left;
+				}
