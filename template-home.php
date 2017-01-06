@@ -10,8 +10,8 @@
 		<div class="contentWrp snapCord landingP1">
 			<div class="contentInr">
 				<div class="landingLogo"></div>
-				<h1>Upgrade the system and return power to the people.</h1>
-				<p>When did our politics become so broken? Things must change. Flux is your way to participate directly in parliament. Empowering people in government decisions directly through technology. Let’s break up the party politics, end the gridlock and return the power to where it belongs - you.</p>
+				<h1><?php the_field('lpIntroHead'); ?></h1>
+				<?php the_field('lpIntroBody'); ?>
 				<div class="btnHex bgcOrng brdOrng"><a>Join Now</a></div>
 				<div class="btnHex bgcDark brdDark"><a>Learn More</a></div>
 			</div>
@@ -19,21 +19,26 @@
 
 		<div class="contentWrp contentWrapPush">
 			<div  class="contentInr">
-				<div class='contentSectHeader'>What is Flux?</div>
+				<div class='contentSectHeader'><?php the_field('lpMediaLabel'); ?></div>
 
-				<div class='embed-container'>
-					<iframe src='https://www.youtube.com/embed/i7MCxADcrwE' frameborder='0' allowfullscreen></iframe>
-				</div>
+				<div class='embed-container'><?php the_field('lpMediaEmbed'); ?></div>
 
-				<h2>Flux in a Nutshell.</h2>
+				<h2><?php the_field('lpMediaHead'); ?></h2>
 				<div class="contentCol contentColLeft">
-					<p>This is us in a nutshell. We’re fed up with the political process too! Flux is your answer for a real democratic voice in parliament.</p>
-					<p><strong>Help us get the word out! #share</strong></p>
+					<?php the_field('lpMediaBody'); ?>
 				</div>
 
 				<div class="contentCol contentColRight">
-					<div class="btnHex btnHexFull bgcOrng brdOrng"><a>Join Now</a></div>
-					<div class="btnHex btnHexFull bgcDark brdDark"><a>Learn More</a></div>
+					<?php if( have_rows('libLinks') ):
+						while ( have_rows('libLinks') ) : the_row();
+							if(get_sub_field('type') == 'url'):
+								$linkURL = get_sub_field('linkURL');
+							else:
+								$linkURL = get_sub_field('linkPage');
+							endif;
+							echo '<div class="btnHex btnHexFull bgc'.get_sub_field('libCol').' brd'.get_sub_field('libCol').'"><a href="'.$linkURL.'">'.get_sub_field('linkLbl').'</a></div>';
+						endwhile;
+					endif; ?>
 				</div>
 
 				<div class="contentBreak"></div>

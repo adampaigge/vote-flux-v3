@@ -213,7 +213,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/assets\/styles\/_tplHome.scss": {
+	"\/assets\/styles\/_tplLanding.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -221,7 +221,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/styles\/_tplHome.css",
+		"oAP": "\/assets\/styles\/_tplLanding.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -3836,6 +3836,14 @@
 		"oAP": "\/composer.lock",
 		"oF": 0
 		},
+	"\/dist\/assets.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/dist\/assets-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/dist\/images\/bgHomePage.jpg": {
 		"ft": 16384,
 		"iS": 287101,
@@ -3908,16 +3916,6 @@
 		"oA": 2,
 		"oAP": "\/dist\/scripts\/main.js.map",
 		"oF": 0
-		},
-	"\/dist\/styles\/main-min.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/dist\/styles\/main-min-min.css",
-		"oF": 0,
-		"oS": 0
 		},
 	"\/dist\/styles\/main.css": {
 		"aP": 0,
