@@ -91,20 +91,20 @@
 			if (e.keyCode === 87) { $('.gridWrp').fadeToggle(); }
 		});
 
-		// $(window).resize(UTIL.resizeEvents)
-		//
-		// $(window).scroll(function (event) {
-		// 	var wScroll = $(window).scrollTop();
-		// 	console.log(wScroll)
-		// 	if($('body').hasClass('home')) {
-		// 		if(wScroll >= (winH /3)) {
-		// 			$('.siteNavWrp').addClass('navShow');
-		// 		} else {
-		// 			$('.siteNavWrp').removeClass('navShow');
-		// 		}
-		// 	}
-		//
-		// });
+		$(window).resize(UTIL.resizeEvents)
+
+		$(window).scroll(function (event) {
+			var wScroll = $(window).scrollTop();
+			console.log(wScroll)
+			if($('body').hasClass('home')) {
+				if(wScroll >= (winH /3)) {
+					$('.siteNavWrp').addClass('navShow');
+				} else {
+					$('.siteNavWrp').removeClass('navShow');
+				}
+			}
+
+		});
 	});
 
 })(jQuery); // Fully reference jQuery after this point.
