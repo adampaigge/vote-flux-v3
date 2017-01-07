@@ -95,6 +95,7 @@
 
 		$(window).scroll(function (event) {
 			var wScroll = $(window).scrollTop();
+			console.log(wScroll)
 			if($('body').hasClass('home')) {
 				if(wScroll >= (winH /3)) {
 					$('.siteNavWrp').addClass('navShow');
