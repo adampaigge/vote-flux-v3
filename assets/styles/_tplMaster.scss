@@ -116,10 +116,10 @@ hr {
 
 
 .siteNavWrp {
-	@include posFixed(); opacity:0;
+	@include posFixed();
 	z-index: 20;
 	padding: 16px 32px;
-	top: -64px;  right: 0;  left: 0;
+	  right: 0;  left: 0;
 	height: 64px;
 	background: rgba(#000000, 0.5);
 

@@ -13,6 +13,12 @@
 		margin-right: 0;
 	}
 
+		.postThumb {
+			@include posRelative();
+			width: 100%; height: grd-rows(10);
+			background-position: center;
+		}
+
 		.postTitle {
 			//height:grd-rows(4);
 		}

@@ -4,6 +4,12 @@
  */
 ?>
 
+<style>
+	.siteNavWrp {
+		opacity:0; top: -64px;
+	}
+</style>
+
 <?php while (have_posts()) : the_post(); ?>
 	<div class="scrollWrp">
 		<div class="contentBgi"></div>

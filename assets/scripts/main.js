@@ -95,13 +95,14 @@
 
 		$(window).scroll(function (event) {
 			var wScroll = $(window).scrollTop();
-
-			if(wScroll >= (winH /3)) {
-				$('.siteNavWrp').addClass('navShow');
-			} else {
-				$('.siteNavWrp').removeClass('navShow');
-
+			if($('body').hasClass('home')) {
+				if(wScroll >= (winH /3)) {
+					$('.siteNavWrp').addClass('navShow');
+				} else {
+					$('.siteNavWrp').removeClass('navShow');
+				}
 			}
+
 		});
 	});
 
