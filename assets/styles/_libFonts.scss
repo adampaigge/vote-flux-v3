@@ -12,9 +12,7 @@ $fontBold: 'Helvetica Neue LT W01_71488914', sans-serif;
 $fontBlack: 'Helvetica Neue LT W01_95 Black', sans-serif;
 
 body {
-    font-family: $fontRoman;
-    font-size: 14px; line-height: 20px;
-    color: #FFF;
+    font-size: 0px; line-height: 0px;
 }
 
 p {
@@ -46,57 +44,98 @@ strong {
 h1, h2, h3, h4, h5 {
     @include posRelative;
     margin: 0 0 16px 0; padding: 0;
+	font-family: $fontBlack;
     color: #FFF;
 	text-align: left;
+	letter-spacing: 1px;
+	line-height: 32px;
 }
 
 h1 {
-	margin-bottom: 32px;
-    font-family: $fontThin;
-    font-size: 80px; line-height: 80px;
-	letter-spacing: 1px;
+	font-size: 32px;
 }
 
 h2 {
-	font-family: $fontBlack;
-	font-size: 32px; line-height: 32px;
-	letter-spacing: 1px;
-
+	font-size: 32px;
 }
 
 h3 {
-	font-family: $fontBlack;
-	font-size: 24px; line-height: 32px;
-	letter-spacing: 1px;
+	font-size: 24px;
 
 }
 
 h4 {
-	font-family: $fontBlack;
 	font-size: 20px; line-height: 24px;
-	letter-spacing: 1px;
 
 }
 
 h5 {
-	font-family: $fontBlack;
 	font-size: 18px; line-height: 24px;
+}
+
+.hSpecial {
+	@include posRelative;
+	margin: 0 0 32px 0; padding: 0;
+	color: #FFF;
+	text-align: left;
+
+	font-family: $fontThin;
+	font-size: 80px; line-height: 80px;
 	letter-spacing: 1px;
+}
+
+@media only screen
+and (max-width: $rspL) {
 
 }
 
 @media only screen
-and (max-width: $canvas-bp-lrg) {
+and (max-width: $rspM) {
 
+
+	p {
+		margin: 0 0 16px 0; padding: 0;
+		font-size: 14px; line-height: 16px;
+		letter-spacing: 01px;
+	}
+
+	.hSpecial {
+		margin-bottom: 16px;
+		font-size: 48px; line-height: 48px;
+		letter-spacing: 1px;
+	}
+
+	h1, h2, h3, h4, h5 {
+		letter-spacing: 0px;
+		line-height: 32px;
+		margin-bottom: 8px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 22px; line-height: 24px;
+
+	}
+
+	h4 {
+		font-size: 20px; line-height: 24px;
+
+	}
+
+	h5 {
+		font-size: 16px; line-height: 16px;
+	}
 }
 
 @media only screen
-and (max-width: $canvas-bp-med) {
-
-}
-
-@media only screen
-and (max-width: $canvas-bp-sml) {
+and (max-width: $rspS) {
     h1 {
         font-size: 28px; line-height: 30px;
     }
@@ -154,6 +193,7 @@ cite:before {
 
     font-family: $fontBold; font-size: 20px; line-height: 32px; letter-spacing: 1px;
     text-align: center;
+	color: #FFF;
 }
 
 	.btnHex:before {
@@ -179,6 +219,21 @@ cite:before {
 	}
 
 	.btnHexFull {
-		margin: 0 0 16px 0;
+		margin: 0 0 8px 0;
 		width: calc(100% - 18px);
 	}
+
+@media only screen
+and (max-width: $rspM) {
+
+	.btnHex {
+		font-size: 16px; letter-spacing: 0px;
+		color: #FFF;
+	}
+
+	.btnHexFull {
+		margin: 0 0 8px 0;
+		width: calc(100% - 18px);
+	}
+
+}

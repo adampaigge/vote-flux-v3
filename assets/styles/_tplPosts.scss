@@ -44,3 +44,21 @@
 					margin-right: 16px;
 					width: auto;
 				}
+
+@media only screen
+and (max-width: $rspL) {
+
+}
+
+@media only screen
+and (max-width: $rspM) {
+
+}
+
+@media only screen
+and (max-width: $rspS) {
+	.contentPost {
+		padding-bottom: 16px;
+		width: 100%; height: auto;
+	}
+}

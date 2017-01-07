@@ -25,3 +25,13 @@
 		background-image: url('../../dist/images/logoFull.svg');
 		background-size: 100%;
 	}
+
+
+
+@media only screen
+and (max-width: $rspS) {
+	.landingP1 .contentInr {
+		padding-right: 0;
+	}
+
+}

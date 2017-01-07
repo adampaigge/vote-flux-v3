@@ -8,27 +8,27 @@
 	<div class="scrollWrp">
 		<div class="contentBgi"></div>
 		<div class="contentWrp snapCord landingP1">
-			<div class="contentInr">
+			<div class="contentInr sFull">
 				<div class="landingLogo"></div>
-				<h1><?php the_field('lpIntroHead'); ?></h1>
+				<div class="hSpecial"><?php the_field('lpIntroHead'); ?></div>
 				<?php the_field('lpIntroBody'); ?>
-				<div class="btnHex bgcOrng brdOrng"><a>Join Now</a></div>
-				<div class="btnHex bgcDark brdDark"><a>Learn More</a></div>
+				<div class="btnHex bgcOrng brdOrng sFull"><a>Join Now</a></div>
+				<div class="btnHex bgcDark brdDark sFull"><a>Learn More</a></div>
 			</div>
 		</div>
 
 		<div class="contentWrp contentWrapPush">
 			<div  class="contentInr">
-				<div class='contentSectHeader'><?php the_field('lpMediaLabel'); ?></div>
+				<div class='contentSectHeader sFull'><?php the_field('lpMediaLabel'); ?></div>
 
-				<div class='embed-container'><?php the_field('lpMediaEmbed'); ?></div>
+				<div class='embed-container sFull'><?php the_field('lpMediaEmbed'); ?></div>
 
 				<h2><?php the_field('lpMediaHead'); ?></h2>
-				<div class="contentCol contentColLeft">
+				<div class="contentCol contentColLeft sFull">
 					<?php the_field('lpMediaBody'); ?>
 				</div>
 
-				<div class="contentCol contentColRight">
+				<div class="contentCol contentColRight sFull">
 					<?php if( have_rows('libLinks') ):
 						while ( have_rows('libLinks') ) : the_row();
 							if(get_sub_field('type') == 'url'):

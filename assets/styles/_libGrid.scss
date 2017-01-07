@@ -1,5 +1,13 @@
 
 
+
+//Breakpoints
+$rspL: 1080px;
+$rspM: 800px;
+$rspS: 414px;
+$rspN: 375px;
+
+//Grid Measures
 $grdRow: 16px;
 $grdCol: 12.5%;
 $grdGtr: 16px;
@@ -61,3 +69,30 @@ div.gridWrp {
 	.grid-row:nth-child(5n), .grid-row:nth-child(5n + 1) {
 		border-bottom-color: aqua;
 	}
+
+
+
+
+//Responsive Adjusters
+@media only screen
+and (max-width: $rspL) {
+
+}
+
+@media only screen
+and (max-width: $rspM) {
+
+}
+
+@media only screen
+and (max-width: $rspS) {
+	.sFull {
+		margin: 0 0 8px 0 !important;
+		width: 100% !important;
+	}
+
+	.sHalf {
+		margin: 0 !important;
+		width: 50% !important;
+	}
+}
